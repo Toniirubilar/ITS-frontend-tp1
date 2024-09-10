@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #1a3057;
+    --secondary-color: #28124b;
+}
+
+*{
+    font-family: Roboto, sans sans-serif;
+}
+header {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* flex-direction: column; */
+
+
+}
+
+.imglogo {
+    max-width: auto;
+    height: 150px;
+}
+
+
+.boton {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .boton:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+  }
+
+body {  
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/fondo_code1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*  */
+
+}
+
+h1,
+h2,
+p {
+    color: #ffffff;
+}
+
+
+.parr{
+    color: #ffffff;
+}
+section {
+    margin: 0px;
+    padding: 20px;
+}
+
+.frase {
+    max-width: 100%;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    background: linear-gradient(to right, #141e30, #243b55);
+    background-size: cover;
+}
+
+.cuadro{
+    display: flex;
+}
+
+.hero{
+    max-width: 50%;
+}
+
+.programas{
+    display: flex;
+    max-width: 100%;
+}
+.programas img{
+    padding: 50px;
+    width: 50%;
+    height: 800px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+a{
+    font-size: 34px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .imglogo {
+      height: 100px;
+    }
+  
+    .boton {
+      font-size: 14px; 
+    }
+  
+    .frase {
+      padding: 20px;
+      margin-left: 30px;
+      margin-right: 30px;
+      
+    }
+
+    .cuadro{
+        display: grid;
+        grid-area: 1fr;
+        margin-left: 30px;
+    }
+
+    .programas{
+        display: grid;
+    }
+    .programas img{
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+  }
+
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+.imglogo {
+    animation: fade-in 3s ease-in-out;
+  }
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+.titulo {
+    animation: slideInLeft 1s ease-in-out;
+  }
